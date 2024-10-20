@@ -268,7 +268,6 @@ main {
     margin: 20px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.118);
 }
 
 .main__popular img {
