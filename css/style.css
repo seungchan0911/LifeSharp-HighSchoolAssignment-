@@ -37,6 +37,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(251, 251, 251);
 }
 
 .container {
@@ -95,6 +96,7 @@ header {
     height: 40px;
     border: 1px solid rgb(164, 164, 164);
     border-radius: 20px;
+    background-color: rgb(255, 255, 255);
 }
 
 .header__search input {
@@ -166,7 +168,7 @@ header {
     opacity: 0;
     border-radius: 0 0 10px 10px;
     padding-bottom: 5px;
-    background-color: white;
+    background-color: rgb(251, 251, 251);
     transition: .2s;
     z-index: 10;
 }
@@ -243,7 +245,6 @@ main {
     align-items: center;
     font-family: 'HakgyoansimBadasseugiTTF-L';
     width: 100%;
-    height: 700px;
 }
 
 .main__popular > h1 {
@@ -269,13 +270,13 @@ main {
     border-radius: 30px;
     overflow: hidden;
     border: 1px solid lightgray;
+    background-color: white;
 }
 
 .main__popular img {
     height: 250px;
     padding: 70px;
     scale: 200%;
-    z-index: -100;
 }
 
 .main__popular a {
@@ -284,17 +285,21 @@ main {
 
 .main__popular > ul > li:hover a {
     scale: 110%;
-    z-index: -1;
 }
 
 .main__popular > ul > li:hover > .title {
     bottom: 0;
 }
 
+.main__popular > ul > li:hover .title-circle__main__popular i {
+    rotate: 180deg;
+}
+
 .main__popular .title {
     position: absolute;
     bottom: -100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -306,6 +311,33 @@ main {
     line-height: 24px;
     border-radius: 10%;
     transition: .3s;
+}
+
+.title-circle__main__popular {
+    width: 50px;
+    height: 20px;
+    background-color: #0000009f;
+    position: absolute;
+    top: -20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.title-circle__main__popular i {
+    scale: 80%;
+}
+
+.bar__main__popular {
+    width: calc(100% - 750px);
+    height: 1px;
+    background-color: lightgray;
+}
+
+.title-text__main__popular {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* footer! */
