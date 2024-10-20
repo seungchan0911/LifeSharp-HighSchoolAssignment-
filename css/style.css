@@ -226,6 +226,7 @@ main {
 }
 
 .main__banner h1 {
+    width: 224px;
     margin-left: 100px;
     font-size: 28px;
     line-height: 48px;
@@ -327,7 +328,7 @@ main {
 }
 
 .bar__main__popular {
-    width: calc(100% - 750px);
+    width: calc(100% / 2 - 112px);
     height: 1px;
     background-color: lightgray;
 }
