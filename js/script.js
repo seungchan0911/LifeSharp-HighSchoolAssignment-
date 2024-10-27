@@ -5,4 +5,10 @@ $(function(){
     $(".popup__btn").click(function(){
         $(".popup__background").hide();
     })
+    $(".popup__close").click(function(){
+        $(".popup__background-mobile").hide();
+    })
+    $(".popup__btn").click(function(){
+        $(".popup__background-mobile").hide();
+    })
 })
